@@ -1,9 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <%
 	Cookie[] cookies = request.getCookies();
@@ -18,7 +18,7 @@
 %>
 </head>
 <body>
-	<form name="login_frm" action="/erp/login.do" method="post">
+	<form name="login_frm" action="/erp/emp/login.do" method="post">
 		<table cellpadding="0" cellspacing=5 width="815" bgcolor=#f3f3f3
 			border=0>
 			<tr>
@@ -65,20 +65,17 @@
 																			<td height=10></td>
 																		</tr>
 																		<tr>
-																			<td background="/erp/images/inputBg.gif"><img
-																				src="/erp/images/login_pass.gif"></td>
-																			<td background="/erp/images/inputBg.gif"><input
-																				type="password" name="pass" size="15"
-																				class="grayinput" tabindex='2' style='width: 156;'>
+																			<td background="/erp/images/inputBg.gif">
+																			<img src="/erp/images/login_pass.gif"></td>
+																			<td background="/erp/images/inputBg.gif">
+																			<input type="password" name="pass" size="15" class="grayinput" tabindex='2' style='width: 156;'>
 																			</td>
 																		</tr>
 																		<tr>
-																			<td colspan=3 align=right
-																				style="padding-right: 9; padding-top: 12"><span
-																				style="display: inline"><label
-																					for="member_id_save"><input type="checkbox"
-																						name="member_id_save" id="member_id_save"
-																						value="T" <%if (id.length() != 0)%> <%="checked"%> />æ∆¿Ãµ¿˙¿Â</label>
+																			<td colspan=3 align=right style="padding-right: 9; padding-top: 12">
+																			<span style="display: inline"><label for="member_id_save">
+																			<input type="checkbox" name="member_id_save" id="member_id_save"value="T" 
+																			<%if (id.length() != 0)%> <%="checked"%> />ÏïÑÏù¥ÎîîÏ†ÄÏû•</label>
 																			</span></td>
 																		</tr>
 																	</table>
